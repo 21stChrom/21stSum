@@ -1,11 +1,25 @@
-import React from "react";
-import "./style.css";
+import React, { useState } from 'react';
+import SearchBar from './SearchBar';
+import Document from './Document';
 
-export default function App() {
+const App = () => {
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    const searchQuery = event.target.searchQuery.value;
+    // perform search and update searchResults state
+    setSearchResults(searchResults);
+  };
+
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <SearchBar handleSearch={handleSearch} />
+      {documents.map((document) => (
+        <Document key={document.id} document={document} searchResults={searchResults} />
+      ))}
     </div>
   );
-}
+};
+
+export default App;
