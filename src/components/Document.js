@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Document = ({ document, searchResults }) => {
+function Document ({ document, searchResults }) {
   const { title, author, pages, chapters, content } = document;
 
   const highlightedContent = content.replace(
