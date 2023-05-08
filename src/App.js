@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './SearchBar';
-import './Document';
+import { SearchBa } from './SearchBar';
+import { Documen } from './Document';
 
 const App = () => {
   const [searchResults, setSearchResults] = useState([]);
