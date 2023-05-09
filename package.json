@@ -4,7 +4,10 @@
   "private": true,
   "dependencies": {
     "@types/react": ">=16.14.8",
+    "Npm": "^3.0.0",
+    "api": "^5.0.8",
     "axios": "^1.4.0",
+    "openai": "^3.2.1",
     "react": "^18.1.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.1.0",
