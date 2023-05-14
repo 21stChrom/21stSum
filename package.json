@@ -1,15 +1,17 @@
 {
-  "name": "react",
+  "author": "21stChrom",
+  "name": "docutizer",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@types/react": ">=16.14.8",
-    "Npm": "^3.0.0",
+    "@types/react": "^18.2.6",
+    "npm": "^3.0.0",
     "api": "^5.0.8",
     "axios": "^1.4.0",
-    "react": "^18.1.0",
+    "openai": "^3.2.1",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
-    "react-dom": "^18.1.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.1",
     "react-textarea-autosize": "^8.4.1"
   },
